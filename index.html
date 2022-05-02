@@ -4,57 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Page</title>
+    <title>Survey Form</title>
 
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <main>
-        <h1 id="title">Survey form page</h1><br>
-        <p id="description">Set your personal information below</p>
-        <form id="survey-form">
-            <label>
-                <h4>Name</h4>
-                <input type="text">
+    <h1 id="title">softCodeCamp Survey Form</h1> <!--User story #1-->
+    <p id="description">You can sing up and describe all we can do for you.</p> <!--User story #2-->
+    <form id="survey-form"> <!--User story #3-->
+        <div>
+            <label for="name" id="name-label">Name</label> <!--User story #10-->
+            <input id="name" type="text" placeholder="name" required> <!--User story #4 and #11-->
+        </div>
+        <div>
+            <label for="email" id="email-label">Email</label> <!--User story #10-->
+            <input id="email" type="email" placeholder="email" required> <!--User story #5, #6 and #11-->
+        </div>
+        <div>
+            <label for="number" id="number-label">Age</label> <!--User story #10-->
+            <input id="number" type="number" placeholder="Age" min="10" max="100" required> <!--User story #7, #8, #9 and #11-->
+        </div>
+        <div>
+            <label for="dropdown">Which option best describe your current rule?</label> <!--User story #12-->
+            <select id="dropdown" name="select">
+                <option value="select a current rule" selected disabled>Select a current rule</option>
+                <option value="student">Student</option>
+                <option value="full time job">Full Time Job</option>
+                <option value="full time learner">Full Time Learner</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <h4>Would you recommend softCodeCamp to a friend?</h4>
+            <!--User story #13-->
+            <label for="definately">
+                <input id="definately" type="radio" name="definately-maybe-not sure" value="definately" checked> Definately
             </label>
-            <label>
-                <h4>Email</h4>
-                <input type="email">
+            <label for="maybe">
+                <input id="maybe" type="radio" name="definately-maybe-not sure" value="maybe"> Maybe
             </label>
-            <label>
-                <h4>Age</h4>
-                <input type="number">
+            <label for="not sure">
+                <input id="not sure" type="radio" name="definately-maybe-not sure" value="not sure"> Not Sure
             </label>
-            <label>
-                <h4>Which option</h4>
-                <input type="search">
+        </div>
+        <div> 
+            <h4>What is your favorite feature of softCodeCamp</h4>
+            <!--User story #14-->
+            <label for="select"> 
+                <select id="dropdown" name="select">
+                    <option value="select an option" selected disabled>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open source">Open Source</option>
+                </select>
             </label>
-            <label>
-                <h4>Would you recomend</h4>
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
+        </div>
+        <div>
+            <h4>What would you like to see improved?</h4>
+            <!--User story #15-->
+            <label for="front-end">
+                <input type="checkbox" value="front-end">Front-End 
             </label>
-            <label>
-                <h4>What is your favorite</h4>
-                <input type="search">
+            <!--User story #16-->
+            <label for="back-end">
+                <input type="checkbox" value="back-end">Back-End
             </label>
-            <label>
-                <h4>What would you like</h4>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+            <label for="data bases">
+                <input type="checkbox" value="data bases">Data Bases
             </label>
-            <label>
-                <h4>Any sugestion</h4>
-                <input type="text">
-            </label><br>
-            <label>
-                <button type="submit">submit</button>
+            <label for="challenges">
+                <input type="checkbox" value="challenges">Challenges
             </label>
-        </form>
-    </main>
+            <label for="aditional courses">
+                <input type="checkbox" value="aditional courses">Additional Courses
+            </label>
+            <label for="forum">
+                <input type="checkbox" value="forum">Forum
+            </label>
+        </div>
+        <div>
+            <textarea id="comment" cols="30" rows="10" placeholder="Enter with your comment here..."></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 </html>

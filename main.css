@@ -1,6 +1,130 @@
-main{
-    margin: auto;
+body{
+    font-family: sans-serif;
+    background: linear-gradient( rgba(0,200,200,0.7), rgba(0,0,255,0.5)), url(dev_bg.jpg);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+div{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 20px;
+    font-size: large;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+/* User story #10 */
+label{
+    position: relative;
+    margin-top: 20px;
+}
+
+/* User story #1 */
+#title{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+/* User story #2 */
+#description{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+/* User story #3 */
+#survey-form{ 
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategrey;
+    margin: auto;
+    width: 80%;
+    border-radius: 5px;
+    max-width: 700px;
+    opacity: 0.85;
+}
+
+/* User story #4 */
+#name{
+    width: 95%;
+    margin-top: 1px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+/* User story #5 */
+#email{
+    width: 95%;
+    margin-top: 1px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+/* User story #7 */
+#number{
+    width: 95%;
+    margin-top: 1px;
+
+    padding: 10px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+/* User story #12 */
+#dropdown{
+    width: 98%;
+    margin-top: 1px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+    color: darkcyan;
+}
+
+/* User story #13 */
+#radio-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+/* User story #14 */
+#check-boxes{
+    display: flex;
+    flex-direction: column;
+}
+
+/* User story #15 */
+#comment{
+    width: 97%;
+    height: 100px;
+    margin: 20px 0 20px 0;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+/* User story #16 */
+#submit{
+    width: 97.9%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(10, 158, 57);
+    color: white;
+    font-size: larger;
+    border-style: none;
+    border-radius: 2px;
+    cursor: pointer;
 }

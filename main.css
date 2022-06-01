@@ -6,125 +6,80 @@ body{
     padding: 0;
 }
 
-
-div{
+form{
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
-    margin-right: 35px;
+    background-color: rgb(55, 55, 100);
+    width: 600px;
     padding: 20px;
-    font-size: large;
+    border-radius: 5px;
+    margin: auto;
+    opacity: 0.9;
 }
 
 h4{
-    margin-bottom: 5px;
+    font-size: large;
 }
 
-/* User story #10 */
+div{
+    margin: 15px;
+}
+
 label{
-    position: relative;
-    margin-top: 20px;
+    font-size: larger;
+    display: flex;
 }
 
-/* User story #1 */
+input[type=text], input[type=email], input[type=number], select{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 3px;
+    border: none;
+    margin: 5px auto;
+    font-size: large;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: inline-flex;
+    box-sizing: content-box;
+    margin-bottom: 15px;
+}
+
+button[type=submit]{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 12px;
+    background-color: rgb(255, 200, 150);
+    border: none;
+    border-radius: 3px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+button :hover{
+    background-color: rgb(255, 150, 100);
+}
+
+textarea{
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    padding: 12px 12px;
+    font-size: larger;
+}
+
 #title{
     text-align: center;
-    margin-bottom: 5px;
-    font-size: 40px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
-/* User story #2 */
 #description{
     text-align: center;
-    margin-top: 5px;
-    font-size: 25px;
-}
-
-/* User story #3 */
-#survey-form{ 
-    display: flex;
-    flex-direction: column;
-    background-color: darkslategrey;
-    margin: auto;
-    width: 80%;
-    border-radius: 5px;
-    max-width: 700px;
-    opacity: 0.85;
-}
-
-/* User story #4 */
-#name{
-    width: 95%;
-    margin-top: 1px;
-    padding: 10px;
-    border-style: none;
-    border-radius: 2px;
-    font-size: 15px;
-}
-
-/* User story #5 */
-#email{
-    width: 95%;
-    margin-top: 1px;
-    padding: 10px;
-    border-style: none;
-    border-radius: 2px;
-    font-size: 15px;
-}
-
-/* User story #7 */
-#number{
-    width: 95%;
-    margin-top: 1px;
-
-    padding: 10px;
-    border-style: none;
-    border-radius: 2px;
-    font-size: 15px;
-}
-
-/* User story #12 */
-#dropdown{
-    width: 98%;
-    margin-top: 1px;
-    padding: 10px;
-    border-style: none;
-    border-radius: 2px;
-    font-size: 15px;
-    color: darkcyan;
-}
-
-/* User story #13 */
-#radio-buttons{
-    display: flex;
-    flex-direction: column;
-}
-
-/* User story #14 */
-#check-boxes{
-    display: flex;
-    flex-direction: column;
-}
-
-/* User story #15 */
-#comment{
-    width: 97%;
-    height: 100px;
-    margin: 20px 0 20px 0;
-    border-style: none;
-    border-radius: 2px;
-    font-size: 15px;
-}
-
-/* User story #16 */
-#submit{
-    width: 97.9%;
-    height: 50px;
-    margin-bottom: 20px;
-    background-color: rgb(10, 158, 57);
-    color: white;
     font-size: larger;
-    border-style: none;
-    border-radius: 2px;
-    cursor: pointer;
 }
